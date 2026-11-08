@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://denizkaan-dev.github.io/bigman-onizleme/advice/sitemap-index.xml

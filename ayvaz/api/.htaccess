@@ -1,0 +1,11 @@
+# The uploaded CVs live under api/inbox and are never public.
+<IfModule mod_authz_core.c>
+  <FilesMatch "^(config|shop-config|catalog|shop-lib)\.php$">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(inbox|orders)/ - [F,L]
+</IfModule>
